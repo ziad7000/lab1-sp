@@ -151,6 +151,36 @@ button:focus-visible {
   transform: translateY(-1px);
 }
 
+/* Filter tabs */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.filter-tabs button {
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-family: inherit;
+  font-size: 0.78rem;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-tabs button:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.filter-tabs button.active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
 /* List */
 .todo-list {
   list-style: none;
